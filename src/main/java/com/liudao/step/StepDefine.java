@@ -14,6 +14,11 @@ import java.net.URLEncoder;
 
 import static org.testng.Assert.*;
 
+/**
+ * Define all the test steps we needed in the api test.
+ * @author liudao
+ * @version 1.0
+ */
 public class StepDefine {
 
     private EasyRequest request;

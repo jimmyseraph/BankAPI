@@ -9,6 +9,11 @@ import okhttp3.Response;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Implement the interface EasyResponse using OkHttp
+ * @author liudao
+ * @version 1.0
+ */
 public class OkHttpEasyResponse implements EasyResponse {
 
     private Response response;
@@ -17,7 +22,7 @@ public class OkHttpEasyResponse implements EasyResponse {
 
     public  OkHttpEasyResponse(String url,Response response) throws IOException {
         this.response = response;
-        this.bodyString = response.body().string();
+        this.bodyString = response.body().string(); // save the body string as this will be cleared when string method is called in OkHttp
         this.url = url;
     }
 

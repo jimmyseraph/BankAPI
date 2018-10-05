@@ -1,5 +1,10 @@
 package com.liudao.entities;
 
+/**
+ * ErrorEntity to store the json object of the response body when request failed
+ * @author liudao
+ * @version 1.0
+ */
 public class ErrorEntity {
     private String error;
 

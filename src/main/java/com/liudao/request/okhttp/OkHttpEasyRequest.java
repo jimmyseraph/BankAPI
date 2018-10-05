@@ -9,6 +9,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Implement the interface EasyRequest using OkHttp
+ * @author liudao
+ * @version 1.0
+ */
 public class OkHttpEasyRequest implements EasyRequest {
 
     private final OkHttpClient client = new OkHttpClient.Builder()
@@ -23,6 +28,9 @@ public class OkHttpEasyRequest implements EasyRequest {
     private String method;
     private RequestBody requestBody;
 
+    /**
+     * initial the request object
+     */
     public OkHttpEasyRequest(){
         queryParams = new HashMap<>();
         headers = new HashMap<>();
@@ -123,6 +131,7 @@ public class OkHttpEasyRequest implements EasyRequest {
                     .append(k).append("=").append(v).append(";"));
             builder.addHeader("Cookie",cookieString.toString());
         }
+        // setup the method and body
         builder.method(this.method, this.requestBody);
         Request request = builder.build();
         Response response = client.newCall(request).execute();
