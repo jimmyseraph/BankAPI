@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Airwallex test-suite" >
+    <test name="bank api test" >
+        <classes>
+            <class name="com.liudao.runners.CucumberRunner" />
+        </classes>
+    </test>
+</suite>
