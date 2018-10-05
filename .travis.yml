@@ -1,4 +1,5 @@
 language: java
+jdk: oraclejdk8
 sudo: false
 
 cache:
@@ -8,10 +9,8 @@ cache:
 jobs:
   include:
   - stage: test
-    jdk: oraclejdk8
     script: mvn test
   - stage: build
-    jdk: oraclejdk8
     script: mvn build -DskipTests=true
 
 branches:
