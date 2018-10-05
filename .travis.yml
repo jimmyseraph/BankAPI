@@ -10,8 +10,6 @@ jobs:
   include:
   - stage: test
     script: mvn test
-  - stage: build
-    script: mvn build -DskipTests=true
 
 branches:
   only:

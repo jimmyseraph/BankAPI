@@ -1,5 +1,5 @@
 # API Automation test framework
-
+[![Build Status](https://travis-ci.org/jimmyseraph/BankAPI.svg?branch=master)](https://travis-ci.org/jimmyseraph/BankAPI)
 ## How to run
 ### Environment requirements
 > 1. Download `JDK1.8`(from https://www.oracle.com) or `OpenJDK1.8` from official website.
