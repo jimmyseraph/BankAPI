@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Airwallex test-suite" >
+    <listeners>
+        <listener class-name="com.liudao.listeners.EnhanceReportListener" />
+    </listeners>
     <test name="bank api test" >
         <classes>
             <class name="com.liudao.runners.CucumberRunner" />
