@@ -6,3 +6,4 @@ target
 test-output
 .allure-*
 .allure
+.DS_Store
