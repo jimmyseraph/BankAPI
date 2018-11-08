@@ -6,7 +6,7 @@
 > 2. Config user environment of JDK: `JAVA_HOME`, and add JDK binary directory to `PATH`
 > 3. Download `Maven` from [Maven official Website](https://maven.apache.org)
 > 4. Add maven binary directory to `PATH`.
-
+ 
 ### Run test case using Maven
 > If you have downloaded source from repository, you can run test cases easily by typing the `Maven` command in CLI:
 ```shell
